@@ -8,21 +8,21 @@ public class Main {
         int[] objects = new int[3];
         //Задача 2
         System.out.println("Задача 2");
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < objecti.length; i++) {
             if (i == objecti.length - 1) {
                 System.out.println(objecti[i]);
                 break;
             }
             System.out.print(objecti[i] + ", ");
         }
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < objectd.length; i++) {
             if (i == objectd.length - 1) {
                 System.out.println(objectd[i]);
                 break;
             }
             System.out.print(objectd[i] + ", ");
         }
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < objects.length; i++) {
             if (i == objects.length - 1) {
                 System.out.println(objects[i]);
                 break;
@@ -51,6 +51,19 @@ public class Main {
                 break;
             }
             System.out.print(objects[i] + ", ");
+        }
+        //Задача 4
+        System.out.println("Задача 4");
+        int number = 0;
+        for (int i = 0; i < objecti.length; i++) {
+            if (objecti[i] % 2 != 0) {
+                objecti[i] += 1;
+            }
+            if (i == objecti.length - 1) {
+                System.out.println(objecti[i]);
+                break;
+            }
+            System.out.print(objecti[i] + ", ");
         }
     }
 }
